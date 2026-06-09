@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #ff4d6d, #1a1a2e);
+  background-size: 400% 400%;
+  animation: bg 10s ease infinite;
+}
+
+@keyframes bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* INTRO */
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 35px;
+}
+
+.hero p {
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  margin: 20px auto;
+  max-width: 750px;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* BUTTON */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+/* SURPRISE */
+.surprise {
+  display: none;
+  margin: 30px auto;
+  max-width: 700px;
+  padding: 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+
+/* floating hearts */
+body::before {
+  content: "💛 ✨ 💛 ✨ 💛 ✨";
+  position: fixed;
+  width: 100%;
+  opacity: 0.2;
+  font-size: 22px;
+  animation: float 12s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh); }
+}
