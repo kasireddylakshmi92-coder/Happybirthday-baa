@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Surprise for You 💛</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="intro" id="intro">
+  <h1>💛 Hey You...</h1>
+  <p>I made something special for you</p>
+  <button onclick="startExperience()">Open</button>
+</div>
+
+<div class="main" id="main">
+
+  <div class="hero">
+    <h1>💛 A Letter Just For You</h1>
+    <p id="typing"></p>
+  </div>
+
+  <section class="card">
+    <h2>🌙 Why This Exists</h2>
+    <p>This is not just a website... it’s a small piece of my heart.</p>
+  </section>
+
+  <section class="card">
+    <h2>📸 Memories</h2>
+    <div class="gallery">
+      <img src="images/1.jpg">
+      <img src="images/2.jpg">
+      <img src="images/3.jpg">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>💛 What You Mean</h2>
+    <p>You became one of the most important people in my life without even trying.</p>
+  </section>
+
+  <div class="center">
+    <button onclick="reveal()">💌 Final Surprise</button>
+  </div>
+
+  <div id="surprise" class="surprise">
+    <h2>💛 One Last Thing</h2>
+    <p>You are truly special. And I hope you always stay happy, smiling, and loved.</p>
+    <h3>✨ You matter more than you know ✨</h3>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
